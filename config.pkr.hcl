@@ -37,8 +37,8 @@ source "qemu" "ubuntu" {
   vnc_port_min = 5901           # Set a specific VNC port
   vnc_port_max = 5901           # Ensures only this port is used
 
-  ssh_username    = "zijian"
-  ssh_password    = "password"
+  ssh_username    = "ubuntu"
+  ssh_password    = "ubuntu"
   ssh_timeout     = "10000s"
   shutdown_command = "echo 'vagrant' | sudo -S shutdown -P now"
 }
