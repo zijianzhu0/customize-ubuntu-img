@@ -1,0 +1,30 @@
+# Ignore files and directories related to Packer
+output*
+packer_cache/
+subiquity/
+packer.exe
+
+# Ignore ISO files
+*.iso
+
+# Common system files to ignore
+.DS_Store  # macOS system file
+Thumbs.db  # Windows thumbnail cache
+desktop.ini  # Windows desktop config
+._*  # macOS resource forks
+
+# Common temporary files
+*.swp  # Vim swap files
+*.swo  # Vim swap files
+*.bak  # Backup files
+*.log  # Log files
+
+# Ignore cloud-init and autoinstall-related temporary files
+cloud-init-output.log
+installer-logs/
+var/log/installer/
+
+# Ignore Terraform (if used with Packer)
+.terraform/
+terraform.tfstate*
+*.tfvars
